@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-todo-form',
@@ -11,8 +11,7 @@ export class TodoFormComponent {
   addTodo() {
     this.todoItem
       ? (this.todos.push({ text: this.todoItem, isCompleted: false }),
-        (this.todoItem = ''),
-        console.log(this.todos))
+        (this.todoItem = ''))
       : null;
   }
 }

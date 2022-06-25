@@ -12,7 +12,4 @@ interface Todo {
 })
 export class AppComponent {
   todos: any[] = [];
-  checkTodos() {
-    console.log(this.todos);
-  }
 }
