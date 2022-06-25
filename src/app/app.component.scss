@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.todo-app__container {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+.todo-app__wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todo-app__form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  border: 1px dotted black;
+  font-size: 25px;
+}
+
+.todo-app__input {
+  margin-bottom: 15px;
+  width: 200px;
+  height: 20px;
+}
+
+.todo-app__button {
+  width: 100px;
+  height: 30px;
+  font-family: "Roboto", sans-serif;
+  background-color: pink;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.todo-app__list {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+  margin-top: 10px;
+  padding: 30px;
+  font-size: 20px;
+}
+
+.todo-app__list > ul {
+  list-style: none;
+  width: 100%;
+}
+
+.todo-app__item {
+  text-align: left;
+  margin-bottom: 5px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.todo-app__number {
+  color: pink;
+  margin-right: 3px;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.todo-app__delete-button {
+  text-align: center;
+  width: 30px;
+  line-height: 25px;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: 1px dotted black;
+  background-color: pink;
+  cursor: pointer;
+}
+
+.todo-app__edit-button {
+  text-align: center;
+  width: 30px;
+  line-height: 25px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: 1px dotted black;
+  background-color: pink;
+  cursor: pointer;
+}
+
+.todo-app__add-edit-button {
+  width: 50px;
+  line-height: 25px;
+  font-family: "Roboto", sans-serif;
+  border: 1px dotted black;
+  background-color: pink;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.todo-app__edit-field {
+  height: 25px;
+  font-size: 20px;
+}
