@@ -1,0 +1,62 @@
+.todo-app__item {
+  text-align: left;
+  margin-bottom: 5px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.todo-app__number {
+  color: pink;
+  margin-right: 3px;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.todo-app__delete-button {
+  text-align: center;
+  width: 30px;
+  line-height: 25px;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: 1px dotted black;
+  background-color: pink;
+  cursor: pointer;
+}
+
+.todo-app__edit-button {
+  text-align: center;
+  width: 30px;
+  line-height: 25px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: 1px dotted black;
+  background-color: pink;
+  cursor: pointer;
+}
+
+.todo-app__add-edit-button {
+  width: 50px;
+  line-height: 25px;
+  font-family: "Roboto", sans-serif;
+  border: 1px dotted black;
+  background-color: pink;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.todo-app__edit-field {
+  height: 25px;
+  font-size: 20px;
+}

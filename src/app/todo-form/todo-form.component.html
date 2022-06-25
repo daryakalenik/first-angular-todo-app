@@ -1,0 +1,10 @@
+<div class="todo-app__form">
+  <h3>Add your todo</h3>
+  <input
+    type="text"
+    placeholder="Write a todo"
+    [(ngModel)]="todoItem"
+    class="todo-app__input"
+  />
+  <button (click)="addTodo()" class="todo-app__button">ADD</button>
+</div>

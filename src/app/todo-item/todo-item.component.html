@@ -1,0 +1,25 @@
+<li class="todo-app__item" *ngFor="let todo of todos; let idx = index">
+  <span class="todo-app__number">{{ idx + 1 }}. </span>
+  <span
+    (click)="markCompleted(idx)"
+    [ngClass]="todo.isCompleted ? 'done' : ''"
+    *ngIf="todoToEdit.text !== todo.text; else editField"
+  >
+    {{ todo.text }}</span
+  >
+  <ng-template #editField>
+    <input [(ngModel)]="todoToEdit.text" class="todo-app__edit-field" />
+    <button (click)="addEditedTodo(idx)" class="todo-app__add-edit-button">
+      ADD
+    </button>
+  </ng-template>
+  <button
+    *ngIf="todoToEdit.text.length === 0"
+    class="todo-app__edit-button"
+    (click)="editTodo(idx)"
+  >
+    E
+  </button>
+
+  <button class="todo-app__delete-button" (click)="deleteTodo(idx)">X</button>
+</li>
