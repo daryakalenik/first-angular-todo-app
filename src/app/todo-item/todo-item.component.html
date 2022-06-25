@@ -1,4 +1,4 @@
-<li class="todo-app__item" *ngFor="let todo of todos; let idx = index">
+<li class="todo-app__item">
   <span class="todo-app__number">{{ idx + 1 }}. </span>
   <span
     (click)="markCompleted(idx)"

@@ -7,6 +7,8 @@ import { Component, Input } from '@angular/core';
 })
 export class TodoItemComponent {
   @Input() todos!: any[];
+  @Input() idx!: number;
+  @Input() todo!: { text: string; isCompleted: boolean };
 
   todoToEdit = { text: '', isCompleted: false };
   markCompleted(id: number) {

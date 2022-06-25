@@ -1,5 +1,10 @@
 <div class="todo-app__list">
   <ul>
-    <app-todo-item [todos]="todos"></app-todo-item>
+    <app-todo-item
+      *ngFor="let todo of todos; let idx = index"
+      [todos]="todos"
+      [idx]="idx"
+      [todo]="todo"
+    ></app-todo-item>
   </ul>
 </div>
